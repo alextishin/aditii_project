@@ -1,0 +1,93 @@
+/*@import "https://fonts.googleapis.com/css?family=Lobster";*/
+
+@font-face {
+    font-family: Lobster; /* Имя шрифта */
+    src: url(../fonts/Lobster-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Bebas; /* Имя шрифта */
+    src: url(../fonts/BebasNeue-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    outline: 0px solid black;
+    padding-top: 40px;
+}
+
+.page-header {
+    height: 85px;
+    box-shadow: 0 -1px 5px 0 #e1e1e1;
+}
+
+
+.page-header__toolbar {
+    margin: 0 150px;
+    outline: 0px solid black;
+    height: 100%;
+}
+
+.page-header__toolbar:before {
+    content:'';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.page-header__logo  a {
+    text-decoration: none;
+    color: #3bc3b5;
+    font-family: 'Lobster', cursive;
+    font-size: 49px;
+    font-weight: 400;
+}
+
+.page-header__logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 150px;
+}
+
+.page-header__search-form {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 170px;
+    width: 44%;
+}
+
+.page-header__search-form input {
+    max-width: 430px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    background: url("../images/search.png") no-repeat 98% 50%;
+}
+
+
+.page-header__garbage {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page-header__amount {
+    font-family: "Bebas";
+    color:  #a1a1a1;
+    font-size: 33px;
+    font-weight: bold;
+    margin-left: 15px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+

@@ -7,8 +7,9 @@
 
 @font-face {
     font-family: Bebas; /* Имя шрифта */
-    src: url(../fonts/BebasNeue-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/BebasNeue.ttf); /* Путь к файлу со шрифтом */
 }
+
 
 body {
     margin: 0;
@@ -18,9 +19,12 @@ body {
 .page-wrapper {
     margin: 0 auto;
     max-width: 1280px;
+    min-width: 970px;
     outline: 0px solid black;
     padding-top: 40px;
 }
+
+/* ШАПКА */
 
 .page-header {
     height: 85px;
@@ -53,13 +57,14 @@ body {
 .page-header__logo {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 150px;
+    width: 27%;
+    /*margin-right: 150px;*/
 }
 
 .page-header__search-form {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 170px;
+    /*margin-right: 170px;*/
     width: 44%;
 }
 
@@ -75,6 +80,8 @@ body {
 .page-header__garbage {
     display: inline-block;
     vertical-align: middle;
+    text-align: right;
+    width: 27%;
 }
 
 .page-header__amount {
@@ -84,6 +91,50 @@ body {
     font-weight: bold;
     margin-left: 15px;
     vertical-align: bottom;
+}
+
+.page-header__menu {
+    background: #4ccfc1;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header__menu ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-header__menu ul li {
+    float: left;
+    position: relative;
+    right: 50%;
+    border-left: 2px solid #ffffff;
+    margin: 10px 0 5px 0;
+    padding: 0 20px;
+}
+
+.page-header__menu ul li:first-child {
+    border: none;
+}
+
+.page-header__menu ul li a {
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas";
+    font-weight: 400;
+    font-size: 21px;
 }
 
 
